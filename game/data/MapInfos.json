@@ -2,13 +2,15 @@
 null,
 {"id":1,"expanded":true,"name":"secondArea","order":3,"parentId":0,"scrollX":982.8,"scrollY":539.4},
 {"id":2,"expanded":true,"name":"insideHut","order":4,"parentId":1,"scrollX":0,"scrollY":0,"quick":false},
-{"id":3,"expanded":true,"name":"insideHut1","order":5,"parentId":1,"scrollX":0,"scrollY":0,"quick":false},
+{"id":3,"expanded":true,"name":"insideHut1","order":5,"parentId":1,"scrollX":982.8,"scrollY":539.4,"quick":false},
 {"id":4,"expanded":false,"name":"rightPathfromStart","order":6,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
-{"id":5,"expanded":true,"name":"rightUpPath","order":7,"parentId":0,"scrollX":982.8,"scrollY":539.4,"quick":false},
-{"id":6,"expanded":false,"name":"insidePYHouse","order":8,"parentId":5,"scrollX":0,"scrollY":0,"quick":false},
-{"id":7,"expanded":false,"name":"insidePY1house","order":9,"parentId":5,"scrollX":0,"scrollY":0,"quick":false},
-{"id":8,"expanded":true,"name":"startingArea","order":1,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
+{"id":5,"expanded":true,"name":"rightUpPath","order":7,"parentId":0,"scrollX":1216.5,"scrollY":674.25,"quick":false},
+{"id":6,"expanded":false,"name":"insidePYHouse","order":8,"parentId":5,"scrollX":811,"scrollY":449.5,"quick":false},
+{"id":7,"expanded":false,"name":"insidePY1house","order":9,"parentId":5,"scrollX":648.8,"scrollY":359.6,"quick":false},
+{"id":8,"expanded":true,"name":"startingArea","order":1,"parentId":0,"scrollX":1081.3333333333333,"scrollY":599.3333333333334,"quick":false},
 {"id":9,"expanded":false,"name":"insideFirstHouse","order":2,"parentId":8,"scrollX":1769.4545454545455,"scrollY":980.7272727272727,"quick":false},
-{"id":10,"expanded":true,"name":"bPass","order":10,"parentId":0,"scrollX":648.8,"scrollY":359.6,"quick":false},
-{"id":11,"expanded":false,"name":"bpd lvl 1","order":11,"parentId":10,"scrollX":1321.3333333333333,"scrollY":999.6666666666666,"quick":false}
+{"id":10,"expanded":true,"name":"bPass","order":10,"parentId":0,"scrollX":1217,"scrollY":502.5,"quick":false},
+{"id":11,"expanded":false,"name":"bpd lvl 1","order":11,"parentId":10,"scrollX":4771.5,"scrollY":686.25,"quick":false},
+{"id":12,"expanded":true,"name":"fPass","order":12,"parentId":0,"scrollX":1217,"scrollY":1626.5,"quick":false},
+{"id":13,"expanded":false,"name":"fPassHiddenArea","order":13,"parentId":12,"scrollX":648.8,"scrollY":359.6,"quick":false}
 ]
