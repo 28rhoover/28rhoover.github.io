@@ -9,8 +9,8 @@ null,
 {"id":7,"expanded":false,"name":"insidePY1house","order":9,"parentId":5,"scrollX":648.8,"scrollY":359.6,"quick":false},
 {"id":8,"expanded":true,"name":"startingArea","order":1,"parentId":0,"scrollX":1081.3333333333333,"scrollY":599.3333333333334,"quick":false},
 {"id":9,"expanded":false,"name":"insideFirstHouse","order":2,"parentId":8,"scrollX":1769.4545454545455,"scrollY":980.7272727272727,"quick":false},
-{"id":10,"expanded":true,"name":"bPass","order":10,"parentId":0,"scrollX":1217,"scrollY":502.5,"quick":false},
-{"id":11,"expanded":false,"name":"bpd lvl 1","order":11,"parentId":10,"scrollX":4771.5,"scrollY":686.25,"quick":false},
-{"id":12,"expanded":true,"name":"fPass","order":12,"parentId":0,"scrollX":1217,"scrollY":1626.5,"quick":false},
+{"id":10,"expanded":true,"name":"bPass","order":10,"parentId":0,"scrollX":1216.888888888889,"scrollY":502.6666666666667,"quick":false},
+{"id":11,"expanded":false,"name":"bpd lvl 1","order":11,"parentId":10,"scrollX":973.1999999999999,"scrollY":1392.6,"quick":false},
+{"id":12,"expanded":true,"name":"fPass","order":12,"parentId":0,"scrollX":1426.8,"scrollY":570.6,"quick":false},
 {"id":13,"expanded":false,"name":"fPassHiddenArea","order":13,"parentId":12,"scrollX":648.8,"scrollY":359.6,"quick":false}
 ]
