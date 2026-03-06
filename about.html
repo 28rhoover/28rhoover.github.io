@@ -5,83 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
-
-        .tiny5-regular {
-            font-family: "Tiny5", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-
-        body {
-            background-color: black;
-            background-image: url("grid.png");
-            background-size: cover;
-            font-family: "Tiny5", monospace, Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        nav {
-            background-color: #000000;
-            border: 5px solid white;
-        }
-
-        nav a {
-            color: #FFFFFF
-        }
-
-        a {
-            color: #120a05;
-        }
-
-        article {
-            background-color: #000000;
-            color: white;
-            border: 5px solid white;
-            padding: 0px 10px;
-        }
-
-        article a {
-            color: white;
-        }
-
-        #firstArticle {
-            background-color: transparent;
-            padding: 5px;
-        }
-
-        .empWord {
-            font-weight: bold;
-            color: #8f6660;
-        }
-
-        .orangeButton {
-            background-color: #000000;
-            color: #FCA600;
-            border: 5px solid #FCA600;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            font-family: "Tiny5", sans-serif;
-            transform: scale(1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .orangeButton:hover {
-            transform: scale(0.95);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #ormaImage {
-            image-rendering: pixelated;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -97,19 +21,17 @@
     <div id="firstArticle">
         <center>
             <img id="ormaImage" src="orma.png" alt="Orma" width="200px">
-        </center> 
+        </center>
         <article>
             <header>
                 <h2>About the Developer!</h2>
-                <p>I am an independent web-game developer who likes to make RPGMaker and HTML games. This site is the
-                    home
-                    of my RPGMaker project — codenamed timePrison!</p>
+                <p>I am a passionate web developer with a love for creating games revolving around my original
+                    characters! I love building lore for characters, and may eventually create a master list of all of
+                    the possible information there is to know about my OCs. I have minimal experience in RPGMaker
+                    (particularly RPGMaker MZ), but I perform best when utilizing HTML, CSS, and Javacript. While I
+                    myself am not a proficient programming prodigy (woo, get a load of that alliteration), I like to
+                    feel proud of my current standing, whilst simultaneously not becoming complacent.</p>
             </header>
-            <p><span class="empWord">Note to me:</span> In the future, modify this site and its alternate counterpart to
-                look more like
-                <span class="empWord">Undertale's</span>
-                UI
-            </p>
         </article>
     </div><br><br>
     <a href="game/index.html"><button class="orangeButton">Play RMMZ Project</button></a>
