@@ -1,78 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
-        .tiny5-regular {
-            font-family: "Tiny5", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
-        body {
-            background-color: black;
-            background-image: url("grid.png");
-            background-size: cover;
-            font-family: "Tiny5", monospace, Arial, Helvetica, sans-serif;
-            transition: all 0.3s ease-in-out;
-        }
+body {
+    background-color: black;
+    background-image: url("grid.png");
+    background-size: cover;
+    font-family: "Tiny5", monospace, Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
 
-        h1 {
-            color: white;
-        }
+h1 {
+    color: white;
+}
 
-        nav {
-            background-color: #000000;
-            border: 5px solid white;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: space-between;
-        }
+nav {
+    background-color: #000000;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
 
-        nav a {
-            color: #FFFFFF
-        }
+nav a {
+    color: #FFFFFF
+}
 
-        a {
-            color: #120a05;
-        }
+a {
+    color: #120a05;
+}
 
-        article {
-            background-color: #000000;
-            color: white;
-            border: 5px solid white;
-            padding: 0px 10px;
-            display: flex;
-        }
+.welcomeDiv,
+.infoDiv {
+    background-color: #000000;
+    color: white;
+    border: 5px solid white;
+    padding: 0px 10px;
+    display: flex;
+    margin-bottom: 1em;
+    /* transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    animation: softerVerticalHover 5s infinite ease-in-out; */
+}
 
-        article a {
-            color: white;
-        }
+.infoDiv button {
+    margin-bottom: 1em;
+}
 
-        #firstArticle {
-            background-color: transparent;
-            padding: 5px;
-        }
+.welcomeDiv a,
+.infoDiv a {
+    color: white;
+}
 
-        .empWord {
-            font-weight: bold;
-            color: #8f6660;
-        }
+#firstArticle {
+    background-color: transparent;
+    padding: 5px;
+}
 
-        .orangeButton {
-            background-color: #000000;
-            color: #FCA600;
-            border: 5px solid #FCA600;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            font-family: "Tiny5", sans-serif;
-            transform: scale(1);
-        }
+.empWord {
+    font-weight: bold;
+    color: #8f6660;
+}
 
-        .orangeButton:hover {
-            transform: scale(0.95);
-        }
+.orangeButton {
+    background-color: #000000;
+    color: #FCA600;
+    border: 5px solid #FCA600;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: "Tiny5", sans-serif;
+    transform: scale(1);
+}
 
-        #ormaImage {
-            image-rendering: pixelated;
-        }
+.orangeButton:hover {
+    transform: scale(0.95);
+}
+
+#ormaImage {
+    transform: translateY(0);
+    /* transition: transform 0.5s ease-in-out;
+    animation: softerVerticalHover 5s infinite ease-in-out; */
+}
+
+#gameButton {
+    margin: 10px;
+}
+
+#projectsButton {
+    margin: 10px;
+}
+
+.hover-container img {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    animation: softerVerticalHover 2s infinite ease-in-out;
+}
+
+@keyframes verticalHover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes softerVerticalHover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Test</title>
+
+
+    <style>
+        #cookie {
+            transition: all .2s ease-in-out;
+            user-select: none;
+        }
+
+        /* #cookie:hover {
+            transform: scale(0.95);
+        } */
+
+        #cookie:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <img id="cookie" src="PerfectCookie.webp" onclick="addScore()" width="200px" height="200px" draggable="false">
+
+    <div id="scoreBox">0</div>
+
+    <button id="buyMult" onclick="buyMultiplier()">Buy Upgrade (10 cookies)</button>
+    <button id="buyAuto" onclick="buyAutoClick()">Buy Autoclicker (10 cookies)</button>
+</body>
+
+<script>
+    var name = prompt("What is your name?");
+    name = name.toLowerCase();
+    if (name == "vadim") {
+        document.write("Hey! You owe me five bucks!")
+    } else {
+        document.write("Hello, " + name + "!");
+    }
+
+    var score = 0;
+    var multiplier = 1.0;
+    var autoClickAmount = 0;
+    var scoreBox = document.getElementById("scoreBox");
+    var autoButton = document.getElementById("buyAuto");
+    var multiplyButton = document.getElementById("buyMult");
+
+    function addScore() {
+        score += multiplier;
+        scoreBox.innerHTML = score;
+    }
+
+    function updateUI() {
+        scoreBox.innerHTML = score;
+        multiplyButton.innerHTML = "Buy Upgrade (" + (multiplier * 10) + " cookies)";
+        autoButton.innerHTML = "Buy Autoclicker (" + (autoClickAmount * 10 + 10) + " cookies)";
+    }
+
+    function buyMultiplier() {
+        if (score >= (multiplier * 10)) {
+            score = score - (multiplier * 10)
+            multiplier = multiplier + 0.1;
+            updateUI();
+        } else {
+            alert("Insufficient Funds");
+        }
+    }
+
+    function buyAutoClick() {
+        if (autoClickAmount == 0 && score >= 10) {
+            autoClickAmount = 1;
+            score = score - (autoClickAmount * 10);
+            setInterval(
+                () => {
+                    score = score + autoClickAmount;
+                    scoreBox.innerHTML = score;
+                },
+                1000
+            )
+            updateUI();
+        } else if (autoClickAmount == 0 && score < 10) {
+            alert("Insufficient Funds")
+        } else if (score >= (autoClickAmount * 10)) {
+            score = score - (autoClickAmount * 10 + 10)
+            autoClickAmount += 1;
+            updateUI();
+        } else {
+            alert("Insufficient Funds");
+        }
+    }
+
+</script>
+
+</html>
